@@ -1,8 +1,13 @@
+@import "../mixins";
+
 .work{
     padding-top: 160px;
     &__content{
         display: grid;  
         grid-template-columns: 42% 65%;
+        @include tablet{
+            display: block;
+        }
     }
     &__list{
         counter-reset: my-counter;
@@ -20,6 +25,11 @@
             line-height: 139.5%;
             color: var(--color-black);
              }
+             @include tablet{
+                 &::before{
+                     display: none;
+                 }
+            }
     }
     &__text{
         font-weight: normal;

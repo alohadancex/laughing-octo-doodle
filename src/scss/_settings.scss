@@ -92,6 +92,13 @@ ul {
 .custom-checkbox {
   @include custom-checkbox;
 
+  .burger {
+    --burger-width: 40px;
+    --burger-height: 20px;
+    --burger-line-height: 2px;
+
+    @include burger;
+  }
 }
 
 

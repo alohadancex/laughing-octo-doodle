@@ -21,3 +21,16 @@
     @content;
   }
 }
+
+@mixin mobile-bot {
+  @media (max-width: (430px)) {
+    @content;
+  }
+}
+
+  @mixin mobile-top {
+    @media (max-width: (370px)) {
+      @content;
+    }
+  }
+

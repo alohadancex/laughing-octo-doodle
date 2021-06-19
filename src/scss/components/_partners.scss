@@ -1,8 +1,14 @@
+@import "../mixins";
+
+
 .partners{
     padding-top: 56px;
     &__item{
         display: flex;
         flex-wrap: wrap;
+        @include table-small{
+            display: block;
+        }
     }
     &__photo{
         padding-right: 14px;
@@ -14,6 +20,12 @@
         &:nth-child(5){
             position: relative;
             left: 77px;
+        }
+        @include mobile{
+            &:nth-child(5){
+                position: relative;
+                left: 60px;
+            }
         }
     }
 }

@@ -1,8 +1,15 @@
+@import "../mixins";
+
 .footer{
-    padding-top: 420px;
+    margin-top: 273px;
     background-color: var(--color-black);
+    padding-bottom: 57px;
     &__item{
         display: flex;
+        @include table-small{
+            display: block;
+        }
+        
     }
     &__text{
         font-weight: normal;
@@ -36,4 +43,10 @@
     width: 250px;
     height: 50px;
     padding: 10px 30px;
+}
+
+.footer__lg{
+    @include table-small{
+        max-width: none;
+    }
 }

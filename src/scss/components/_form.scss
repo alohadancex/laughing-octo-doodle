@@ -1,3 +1,5 @@
+@import "../mixins";
+
 .form{
     background: #F8F8F8;
     &__text{
@@ -26,6 +28,9 @@
     &__input{
         padding-left: 73px;
         padding-top: 105px;
+        @include mobile-bot{
+            padding-left: 0;
+        }
     }
     &__btn{
         background: #3D9BE9;
@@ -42,3 +47,8 @@
     display: block;
 }
 
+.form__images{
+    @include mobile{
+        display: none;
+    }
+}
