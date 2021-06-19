@@ -1,0 +1,58 @@
+@import "../mixins";
+
+.hero{
+    background-image: url('../img/bgc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 478.51px;
+    &__inner{
+        display: flex;
+    }
+    &__info{
+        padding-top: 106px;
+        padding-right: 50px;
+    }
+    &__strong{
+        color: var(--color-black);
+        font: var(--middle-high-second);
+        padding-bottom: 6px;
+    }
+    &__title{
+        color: var(--color-black);
+        font: var(--middle-black);
+        margin-bottom: 0;
+        margin-top: 13px;
+
+        @include tablet{
+            font-size: 54px;
+            font-style: 900;
+        }
+    }
+    &__text{
+        color: var(--color-black);
+        font: var(--middle-high-3);
+    }
+
+    @include tablet{
+        .hero__img{
+            display: none;
+        }
+    }
+
+}
+.hero__btn{
+    @include tablet{
+        padding-top: 10px;
+    }
+}
+
+.hero__button{
+    border-radius: 3px;
+    background-color: var(--color-btn);
+    padding: 10px 48px;
+    width: 312px;
+    height: 64px;
+    color: var(--color-white);
+    letter-spacing: 0.02em;
+    font: var(--middle-regular);
+}

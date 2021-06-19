@@ -1,0 +1,28 @@
+@import "../mixins";
+
+.header{
+    background-image: url('../img/bgc.png');
+    height: 101px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  &__content{
+    display: flex;
+    padding-top: 57px;
+    align-items: center;
+  }
+  &__call{
+    .phone{
+      margin: 0 145px;
+      color: var(--color-black);
+      font: var(--middle-high-bold);
+      @include desktop{
+        margin: 0;
+      }
+  }
+    
+  }
+}
+
+
+  

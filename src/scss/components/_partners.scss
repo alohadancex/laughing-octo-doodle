@@ -1,0 +1,19 @@
+.partners{
+    padding-top: 56px;
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__photo{
+        padding-right: 14px;
+    }
+    &__img{
+        align-self: center;
+        flex: 0 1 33.333%;
+        padding: 0 15px;
+        &:nth-child(5){
+            position: relative;
+            left: 77px;
+        }
+    }
+}

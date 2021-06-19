@@ -1,0 +1,39 @@
+.footer{
+    padding-top: 420px;
+    background-color: var(--color-black);
+    &__item{
+        display: flex;
+    }
+    &__text{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140.9%;
+        color: var(--color-white);
+        margin-bottom: 21px;
+        padding-top: 35px;
+    }
+    &__logo{
+        padding-right: 366px;
+    }
+    &__link{
+        padding-top: 27px;
+        margin-bottom:50px;
+        
+    }
+    &__list{
+        color: var(--color-white);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 131%;
+        margin-bottom: 20px;
+    }
+}
+
+.footer__btn{
+    background: var(--color-btn);
+    border-radius: 3px;
+    color: var(--color-white);
+    width: 250px;
+    height: 50px;
+    padding: 10px 30px;
+}

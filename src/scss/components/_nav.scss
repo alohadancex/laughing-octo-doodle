@@ -1,0 +1,19 @@
+@import "../mixins";
+
+.nav{
+    @include table-small{
+        display: none;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        padding-right: 54px;
+    }
+    &__link{
+        white-space: pre;
+        color: var(--color-black);
+        font: var(--middle-high);
+
+    }
+  }

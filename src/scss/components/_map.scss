@@ -1,0 +1,15 @@
+.map{
+    margin-top: -103px;
+    &__item{
+        position: relative;
+        top: 324px;
+        z-index: 111;
+        border-radius: 5px;
+        background-color:var(--color-white);
+        width: 382px;
+        padding: 21px 40px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 131%;
+    }
+}
